@@ -326,7 +326,7 @@ def main():
     tree = ET.parse("../../apple_health_export_data/apple_health_export/export.xml")
     root = tree.getroot()
 
-    # To extract data please replace this with the desired year, format must be YYYY
+    # To extract data from a different year please replace this with the desired year, format must be YYYY
     year = "2023"
 
     (
