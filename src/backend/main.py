@@ -322,12 +322,11 @@ def static_data(root, year):
 
 def main():
 
-    
-
     # get export.xml tree root
     tree = ET.parse("../../apple_health_export_data/apple_health_export/export.xml")
     root = tree.getroot()
 
+    # To extract data please replace this with the desired year, format must be YYYY
     year = "2023"
 
     (
@@ -351,6 +350,7 @@ def main():
     data_extract(timeInDaylight)
     data_extract(spo2)
 
+    # get the first three dates available in the hear rate file and use as the dates to extract for the remaining files
     firstThreeDates = three_days_data("../data/csv/heart_rate_data.csv")
     three_days_data('../data/csv/steps_data.csv', firstThreeDates)
     three_days_data('../data/csv/spo2_data.csv',firstThreeDates)
