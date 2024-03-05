@@ -200,8 +200,6 @@ def extract_data_types(root):
 
 # Desc: Static dictionaries for each data type
 def static_data(root, year):
-    data = {}
-    
     # each dictionary has a unique set of key value pairs that are used to search for, and extract, the corresponding data from the export.xml file.
         # each dictionary specifies the name of the specific datatype output file
     heartRate = {
@@ -214,7 +212,6 @@ def static_data(root, year):
         },
         "outputFileName": "heart_rate_data",
     }
-
     restingHeartRate = {
         "root": root,
         "dataTypeString": "HKQuantityTypeIdentifierRestingHeartRate",
@@ -226,7 +223,6 @@ def static_data(root, year):
         },
         "outputFileName": "resting_heart_rate_data",
     }
-    # Has meta data
     heartRateVariability = {
         "root": root,
         "dataTypeString": "HKQuantityTypeIdentifierHeartRateVariabilitySDNN",
@@ -237,7 +233,6 @@ def static_data(root, year):
         },
         "outputFileName": "heart_rate_variability_data",
     }
-
     steps = {
         "root": root,
         "dataTypeString": "HKQuantityTypeIdentifierStepCount",
@@ -251,8 +246,6 @@ def static_data(root, year):
         },
         "outputFileName": "steps_data",
     }
-
-
     walkingStepLength = {
         "root": root,
         "dataTypeString": "HKQuantityTypeIdentifierWalkingStepLength",
@@ -267,7 +260,6 @@ def static_data(root, year):
         },
         "outputFileName": "gait_length_data"
     }
-
     envAudioExposure = {
         "root": root,
         "dataTypeString": "HKQuantityTypeIdentifierEnvironmentalAudioExposure",
@@ -282,7 +274,6 @@ def static_data(root, year):
         },
         "outputFileName": "environmental_audio_exposure_data",
     }
-
     headphoneAudioExposure = {
         "root": root,
         "dataTypeString": "HKQuantityTypeIdentifierHeadphoneAudioExposure",
@@ -297,10 +288,6 @@ def static_data(root, year):
         },
         "outputFileName": "headphone_audio_exposure_data",
     }
-
-
-    ## WHAT IS THE DIFFERENCE BETWEEN THE VALUE AND ENDTIME-STARTTIME
-    # Has meta data
     timeInDaylight = {
         "root": root,
         "dataTypeString": "HKQuantityTypeIdentifierTimeInDaylight",
@@ -314,7 +301,6 @@ def static_data(root, year):
         },
         "outputFileName": "time_in_daylight_data",
     }
-
     spo2 = {
         "root": root,
         "dataTypeString": "HKQuantityTypeIdentifierOxygenSaturation",
