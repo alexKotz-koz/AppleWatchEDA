@@ -1,7 +1,7 @@
 # Apple Watch Exploratory Data Analysis
 > Preliminary Exploratory Data Analysis of 1 Year of Apple Watch Data
 
-**Goal and Outcome:** The goal of this project was to do some preliminary exploratory data analysis of one persons apple watch data over the course of 2023. Basic findings can be found in /src/frontend/Visualizations.ipynb and the associated png's within /src/frontend
+**Goal and Outcome:** The goal of this project was to do some preliminary exploratory data analysis of an individual persons apple watch data over the course of one year. Basic findings can be found in /src/frontend/Visualizations.ipynb
 
 ## Extracting Apple Watch Data from the Apple ecosystem:
 1. Open the Health app on the iPhone/iPad

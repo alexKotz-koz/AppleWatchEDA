@@ -1,9 +1,0 @@
-name: apple_watch_eda
-channels:
-  - defaults
-  - bioconda
-dependencies:
-  - pandas
-  - numpy
-  - matplotlib
-  - scikit-learn
